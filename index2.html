@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agus.Crochets</title>
+    <link rel="icon" href="logo.jpg">
+    <style>
+        body{
+            margin: 0;
+            background-color: rgba(127, 37, 201, 0.919);
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+        
+        }
+        header{
+            display: grid;
+            grid-template-rows: auto;
+            background-color: blueviolet;
+            overflow-x: hidden;
+        }
+        header nav{
+            padding: 1rem  2rem;
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            align-items: center;            
+        }
+        header nav li a:hover{
+            background-color: rgba(238, 130, 238, 0.627)olet;
+            border-radius: 5px;
+        }
+
+        header nav li a {
+            flex-wrap: nowrap;
+            color: #ffc400;
+            margin-left: 10px;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        header .nav__li a:hover { 
+            border-radius: 5px;
+            background-color: #ffc400;
+            color: blueviolet;
+    }
+        header nav li img{
+            max-width: 100px;
+            max-height: 100px;
+            border-radius: 5px;
+        }
+        @media screen and (max-width: 768px) {
+            header nav, img{
+                margin: 0 auto;
+                flex-direction: column;
+                align-self: flex-start;
+            }}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <li class="nav__li_foto"><a href="index2.html"><img src="logo.jpg" alt="logo"></a></li>
+            <li class="nav__li"><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+            <li class="nav__li"><a href="invierno.html">Invierno</a></li>
+            <li class="nav__li"><a href="verano.html">Verano</a></li>
+            <li class="nav__li"><a href="colecciones.html">Colecciones</a></li>
+
+        </nav>
+    </header>
+
+      <script>
+        
+
+        const $openClose =document.getElementById("open-close")
+          $aside =document.getElementById("aside")
+
+        $openClose.addEventListener("click",()=>{
+          $aside.classList.toggle("desplegar")
+        }) 
+        
+        abrir.addEventListener("click", () => {
+            nav.classList.add("visible");
+            main.classList.remove("visible")
+        })
+        
+        cerrar.addEventListener("click", () => {
+            nav.classList.remove("visible");
+        })
+        desplegar.addEventListener("click", () => {
+            h1.classList.add("visible");
+        })
+        desplegar.addEventListener("click", () => {
+            h1.classList.remove("visible");
+        })
+        redesplegar.addEventListener("click", () => {
+           h1.classList.remove("visible");
+        })
+
+       
+        </script>
+</body>
+</html>

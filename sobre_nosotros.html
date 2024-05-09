@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link   rel="icon" href="logo.jpg" style="object-fit: cover;">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Sobre Nosotros</title>
+    <style>
+        *{
+            max-width: 100vw;
+        }
+    body {
+        margin: 0;
+        background-color: rgba(127, 37, 201, 0.919);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; 
+        max-width: 100vw;
+        margin: 0 auto;
+        
+    }
+    header {
+        display: grid;
+        grid-template-rows: auto;
+        background-color: blueviolet;
+        overflow-x: hidden;
+        font-family: Arial, sans-serif;
+    }
+    header nav {
+        padding: 1rem  2rem;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;          
+    }
+    header nav li a {
+        color: #ffc400;
+        margin-left: 10px;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+    header .nav__li a:hover { 
+            border-radius: 5px;
+            background-color: #ffc400;
+            color: blueviolet;
+    }
+    header nav li img {
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 5px;
+    }
+    main aside {
+        display: inline-flex;
+        max-width: 26vw;
+        margin-bottom: 2px;        
+    }
+    main aside img {
+        max-width: 100%;
+        height: 100%; 
+        border-radius: 20px;
+    }
+    main aside .container_img{
+        margin-left:3rem ;
+        margin: 0;
+        
+    }
+    
+    main {
+    text-align: center;
+    width: 98.8vw;
+    max-height:100vh ;
+    justify-content: center; /* Centra horizontalmente */
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    padding-top: 0;
+    margin: 0 auto;
+   
+    }
+    article .container {
+        width: 100%;
+        height: 100%;
+        align-items: flex-start;
+        justify-content: center;
+        display: flex;
+    }
+
+    article .Article_Second_texto {
+        font-size: 30px;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 35rem;
+    }
+    article .Article_Main_texto{ 
+        color: rgb(65, 8, 118);
+        text-decoration: double underline rgb(202, 155, 1);
+        text-align: center;
+        font-size: 50px;
+        padding: 0;
+        margin: auto;
+    }
+
+    footer{
+        background: linear-gradient( rgba(137, 43, 226, 0.39), rgba(127, 37, 201, 0.919));
+        display: flex;
+        flex-basis: 0;
+        padding: 1rem 2rem;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0;   
+        max-width: 100vw;
+    }
+    footer ul{
+        padding-left: 15px;
+       
+    }
+    footer h2, footer h2 a{
+        text-decoration: underline;
+        color: #ffc400;
+    
+    }
+    footer li {
+            margin: 0 0.4rem;
+        }
+    footer div{
+        display: inline-flex;
+        flex-wrap: nowrap;
+    }
+    footer .li__redes {
+        margin:0;
+        list-style: none;
+        display: inline-flex;
+        gap: 10px;
+        margin-top: 9px;
+       
+    }
+    footer .li__redes i {
+        color: #ffc400;
+        font-size: 20px;
+        margin: 0;
+        margin-right:10px;
+    }
+   
+    @media screen and (min-width: 1901px) and (max-width: 1920px) {
+        footer .Volver_Arriba{
+            margin-left: 80vh;
+            display: inline-flex;
+     }
+         main aside img {
+             margin-left:10rem;                                                                                                             
+            }
+    }
+    @media screen and (min-width: 1001px) and (max-width: 1900px) {
+            main aside img {
+             margin-left:0;                                                                                                             
+            }
+            footer .Volver_Arriba{
+            margin-left: 75vh;
+            display: inline-flex;
+     }
+    }
+     @media screen and (min-width: 900px) and (max-width: 1000px) {
+        
+         main aside img {
+             margin-left:40px;
+             height: 90vh;
+            }}
+            article .Article_Second_texto{
+            margin-bottom: 20rem;
+        }
+    @media screen and (min-width: 0px) and (max-width:900px) {
+        header nav, nav img {
+            margin: 0 auto;
+            flex-direction: column;
+            align-self: flex-start;
+        }
+        footer .Volver_Arriba{
+            display: inline-flex;
+            margin-left: 100px;
+        }
+        footer ul{
+            padding-left: 5px;}
+        main aside img {
+            max-width: 100%;
+            height: 90vh;
+            border-radius: 20px;
+            margin-left: 0;
+        }
+        main aside {
+            margin-left:0;
+            display: flex;
+            margin-right: 0;
+            padding-right: 0;
+            margin: auto;
+            max-width: 26vw;
+            margin-bottom: 2px;        
+        
+        }
+        article .Article_Second_texto{
+            margin-bottom: 20rem;
+        }
+    }
+
+
+
+
+     
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <li class="nav__li_foto"><a href="index2.html"><img src="logo.jpg" alt="logo"></a></li>
+            <li class="nav__li"><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+            <li class="nav__li"><a href="invierno.html">Invierno</a></li>
+            <li class="nav__li"><a href="verano.html">Verano</a></li>
+            <li class="nav__li"><a href="colecciones.html">Colecciones</a></li>
+        </nav>
+    </header>
+    
+    <main>
+    <article>
+        <div class="container">
+            <h1 class="Article_Main_texto">Agus Crochets</h1>
+        </div>
+        <h2 class="Article_Second_texto">
+            Hola soy Agustina Peloso, tengo 16 años y me dedico a tejido al crochet hace 2 años.
+        </h2>
+    </article>
+    <aside>
+            <div class="container_img">    
+                <img src="aside.jpg" alt="aside">
+            </div> 
+    </aside>
+    </main>
+    <footer>
+        <div>
+            <h2>Mis redes sociales:</h2>
+            <ul>
+                <li class="li__redes"><a href="https://www.instagram.com/aguscrochets/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li class="li__redes"><a href="https://www.tiktok.com/@aguscrochets?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+        </div>
+        <h2 class="Volver_Arriba"><a href="#header">Volver a Arriba</a></h2>
+    </footer>
+</body>
+</html>
